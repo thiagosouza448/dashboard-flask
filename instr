@@ -1,0 +1,49 @@
+#!/usr/bin/python3
+''' 
+echo\#\!$(whitch python3) > lista.py
+
+chmod +x lista.py
+
+
+
+git init
+git status
+git add .
+git commit -m 'mensagem'
+git push -u origin master
+git remote add origin https://github.com/Thiagosouzacdpy/pythonfundamentals.git
+
+
+'''
+
+consultar login invalido 
+ tail app.log 
+
+
+
+ssh /etc/ssh/ssh_config linha 52 (yes)
+
+
+
+depois systemctl restart ssh
+
+
+
+
+
+
+
+gerando chave git lab minha mmaquina :   cat ~/.ssh/id_rsa.pub
+
+
+
+#docker run --name flask-app -dti -p 9090:80 flask-app   criar um container para ligar em casa
+
+
+
+download apache https://directory.apache.org/studio/download/download-linux.html  >> usar ldap
+
+
+
+
+

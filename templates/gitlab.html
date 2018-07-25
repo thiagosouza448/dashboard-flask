@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Gitlab{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title clearfix">Gitlab</h1>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <h2>Usuários</h2>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Usuário</th>
+                            <th>Status</th>
+                            <th>Admin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{ % for u in users  % }}
+                        <tr>
+                            <td>{{ u.email}}</td>
+                            <td>{{u.name}}</td>
+                            <td>==ESTADO DO USUÁRIO==</td>
+                            <td>==USUÁRIO É ADMIN==</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <h2>Projetos</h2>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Nome do projeto</th>
+                            <th>Link SSH</th>
+                            <th>Dono</th>
+                            <th>Caminho</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for p in projets %}
+                        <tr>
+                            <td>{{ p.name }}</td>
+                            <td>==SSH DO PROJETO==</td>
+                            <td>==USERNAME DO DONO DO PROJETO==</td>
+                            <td>==CAMINHO DO PROJETO==</td>
+                  
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
