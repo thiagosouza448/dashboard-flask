@@ -10,7 +10,7 @@ from blueprints.jk import jk
 from blueprints.gitlab import gitlab
 
 app = Flask (__name__)
-app.secret_key = '4linux'
+app.secret_key = '	'
 app.register_blueprint(jk)
 app.register_blueprint(pocker)
 app.register_blueprint(gitlab)

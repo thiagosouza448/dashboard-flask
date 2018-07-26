@@ -14,7 +14,7 @@ user = {
 	'mail' : 'thiago448@gmail.com',
 	'uid' : '1',
 	'userPassword' : '{MD5}' + senha 
-}
+}	
 
 objectClass = ['top', 'person', 'organizationalPerson', 'inetOrgPerson']
 dn = 'mail=' + user['mail'] + ',dc=dexter,dc=com,dc=br'
