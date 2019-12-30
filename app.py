@@ -6,12 +6,12 @@ from ldap3 import Server, Connection
 from flask import Flask, render_template, request, session, redirect
 
 from blueprints.pocker import pocker
-from blueprints.jk import jk
+# from blueprints.jk import jk
 from blueprints.gitlab import gitlab
 
 app = Flask (__name__)
 app.secret_key = '	'
-app.register_blueprint(jk)
+# app.register_blueprint(jk)
 app.register_blueprint(pocker)
 app.register_blueprint(gitlab)
 
@@ -51,7 +51,7 @@ def logoff():
 
 
 
-app.run(debug=True)
+app.run()
 
 
 
