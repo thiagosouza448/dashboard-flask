@@ -11,7 +11,7 @@ senha = b2a_base64(md5('123'.encode('utf-8')).digest()).decode('utf-8')
 user = {
 	'cn': 'Thiago',
 	'sn': 'souza',
-	'mail' : 'thiago448@gmail.com',
+	'mail' : 'thiago@gmail.com',
 	'uid' : '1',
 	'userPassword' : '{MD5}' + senha 
 }	
